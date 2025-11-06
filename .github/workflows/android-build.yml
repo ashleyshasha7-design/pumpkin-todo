@@ -22,6 +22,10 @@ jobs:
         with:
           channel: 'stable'
 
+        # 这是我们新增的“侦察兵”步骤，用来查看文件结构
+      - name: List files in the repository
+        run: ls -R
+
       - name: Install dependencies
         run: flutter pub get
 
